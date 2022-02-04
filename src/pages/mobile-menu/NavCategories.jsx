@@ -16,20 +16,20 @@ const categories = [
 function NavCategories() {
   return (
     <div
-      class="tab-pane fade"
+      className="tab-pane fade"
       id="mobile-cats-tab"
       role="tabpanel"
       aria-labelledby="mobile-cats-link"
     >
-      <nav class="mobile-cats-nav">
-        <ul class="mobile-cats-menu">
+      <nav className="mobile-cats-nav">
+        <ul className="mobile-cats-menu">
           <li>
-            <a class="mobile-cats-lead" href="/#">
+            <a className="mobile-cats-lead" href="/#">
               Daily offers
             </a>
           </li>
           <li>
-            <a class="mobile-cats-lead" href="/#">
+            <a className="mobile-cats-lead" href="/#">
               Gift Ideas
             </a>
           </li>

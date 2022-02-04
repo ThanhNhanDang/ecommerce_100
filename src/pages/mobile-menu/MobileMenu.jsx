@@ -3,20 +3,22 @@ import MobileNav from "./MobileNav";
 import MobileSearch from "./MobileSearch";
 import NavCategories from "./NavCategories";
 import NavMenu from "./NavMenu";
+import SocialMedia from "./SocialMedia";
 
 function MobileMenu() {
   return (
-    <div class="mobile-menu-container">
-      <div class="mobile-menu-wrapper">
-        <span class="mobile-menu-close">
-          <i class="icon-close"></i>
+    <div className="mobile-menu-container">
+      <div className="mobile-menu-wrapper">
+        <span className="mobile-menu-close">
+          <i className="icon-close"></i>
         </span>
         <MobileSearch />
         <MobileNav />
-        <div class="tab-content">
+        <div className="tab-content">
           <NavMenu />
           <NavCategories />
         </div>
+        <SocialMedia />
       </div>
     </div>
   );

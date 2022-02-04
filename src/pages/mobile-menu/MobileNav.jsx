@@ -2,10 +2,10 @@ import React from "react";
 
 function MobileNav() {
   return (
-    <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
-      <li class="nav-item">
+    <ul className="nav nav-pills-mobile nav-border-anim" role="tablist">
+      <li className="nav-item">
         <a
-          class="nav-link active"
+          className="nav-link active"
           id="mobile-menu-link"
           data-toggle="tab"
           href="#mobile-menu-tab"
@@ -16,9 +16,9 @@ function MobileNav() {
           Menu
         </a>
       </li>
-      <li class="nav-item">
+      <li className="nav-item">
         <a
-          class="nav-link"
+          className="nav-link"
           id="mobile-cats-link"
           data-toggle="tab"
           href="#mobile-cats-tab"
