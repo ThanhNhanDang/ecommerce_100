@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderCenter from "./HeaderCenter";
 import HeaderLeft from "./HeaderLeft";
-import HeaderRight from "./HeaderRight";
+import HeaderRight from "./HeaderRight/HeaderRight";
 
 function HeaderMiddle() {
   return (

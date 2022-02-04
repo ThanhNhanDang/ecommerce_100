@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HeaderLeft() {
   return (
@@ -8,14 +9,14 @@ function HeaderLeft() {
         <i className="icon-bars"></i>
       </button>
 
-      <a href="index.html" className="logo">
+      <Link to="/" className="logo">
         <img
-          src="assets/images/demos/demo-3/logo.png"
+          src="/assets/images/demos/demo-3/logo.png"
           alt="Molla Logo"
           width="105"
           height="25"
         />
-      </a>
+      </Link>
     </div>
   );
 }
