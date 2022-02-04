@@ -1,6 +1,6 @@
 import React from "react";
 import IntroBanners from "./intro-banners/IntroBanners";
-import IntroSlider from "./intro-slider/IntroSlider";
+import IntroSlider from "./intro-banners/intro-slider/IntroSlider";
 
 function Intro() {
   return (

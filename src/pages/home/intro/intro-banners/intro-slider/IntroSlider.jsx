@@ -46,7 +46,7 @@ const optionsIntro = {
   smartSpeed: 1000,
   navText: ['<i class="icon-angle-left">', '<i class="icon-angle-right">'],
   autoplay: true,
-  nav: false,
+  nav: true,
   dots: true,
   responsive: {
     768: {
