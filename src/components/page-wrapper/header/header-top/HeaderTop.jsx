@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DropdownLanguage from "./DropdownLanguage";
 import DropdownMoney from "./DropdownMoney";
 
@@ -14,8 +15,14 @@ function HeaderTop() {
         <div className="header-right">
           <ul className="top-menu">
             <li>
-              <a href="/">Links</a>
+              <a href="/#">Links</a>
               <ul>
+                <li>
+                  <Link to="/about-us">About</Link>
+                </li>
+                <li>
+                  <Link to="/contact-us">Contact</Link>
+                </li>
                 <li>
                   <DropdownMoney />
                 </li>

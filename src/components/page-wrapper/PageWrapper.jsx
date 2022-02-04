@@ -10,6 +10,7 @@ function PageWrapper() {
       <Main />
       <Footer />
     </div>
+    
   );
 }
 

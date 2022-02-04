@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import HeaderDropdownCartProduct from "./HeaderDropdownCartProduct";
 
@@ -45,6 +46,21 @@ function HeaderRightDropdownCart() {
               productCart={productCart}
             ></HeaderDropdownCartProduct>
           ))}
+          <div className="dropdown-cart-total">
+            <span>Total</span>
+
+            <span className="cart-total-price">$160.00</span>
+          </div>
+
+          <div className="dropdown-cart-action">
+            <Link to="my-cart" className="btn btn-primary">
+              View Cart
+            </Link>
+            <Link to="/checkout" className="btn btn-outline-primary-2">
+              <span>Checkout</span>
+              <i className="icon-long-arrow-right"></i>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
