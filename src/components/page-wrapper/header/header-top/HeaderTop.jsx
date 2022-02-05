@@ -8,27 +8,30 @@ function HeaderTop() {
     <div className="header-top">
       <div className="container">
         <div className="header-left">
-          <a href="tel:#">
-            <i className="icon-phone"></i>Call: +0123 456 789
-          </a>
-        </div>
-        <div className="header-right">
           <ul className="top-menu">
             <li>
               <a href="/#">Links</a>
               <ul>
+                <li>
+                  <a href="tel:#">
+                    <i className="icon-phone"></i>Call: +0123 456 789
+                  </a>
+                </li>
                 <li>
                   <Link to="/about-us">About</Link>
                 </li>
                 <li>
                   <Link to="/contact-us">Contact</Link>
                 </li>
-                <li>
-                  <DropdownMoney />
-                </li>
-                <li>
-                  <DropdownLanguage />
-                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div className="header-right">
+          <ul className="top-menu top-link-menu">
+            <li>
+              <a href="/#">Links</a>
+              <ul>
                 <li>
                   <a href="#signin-modal" data-toggle="modal">
                     Sign in / Sign up
@@ -37,6 +40,8 @@ function HeaderTop() {
               </ul>
             </li>
           </ul>
+          <DropdownMoney />
+          <DropdownLanguage />
         </div>
       </div>
     </div>

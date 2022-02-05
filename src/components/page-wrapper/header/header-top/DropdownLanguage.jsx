@@ -1,19 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DropdownLanguage() {
   return (
-    <div class="header-dropdown">
-      <a href="/">English</a>
-      <div class="header-menu">
+    <div className="header-dropdown">
+      <Link to="/">English</Link>
+      <div className="header-menu">
         <ul>
           <li>
-            <a href="/">English</a>
+            <Link to="/">English</Link>
           </li>
           <li>
-            <a href="/">French</a>
+            <Link to="/">French</Link>
           </li>
           <li>
-            <a href="/">Spanish</a>
+            <Link to="/">Spanish</Link>
           </li>
         </ul>
       </div>

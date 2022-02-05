@@ -123,48 +123,45 @@ function HeaderBottomLeft() {
                         <div class="row">
                           {categoriesClothing.row.map((item) => (
                             <div class="col-md-6" key={item.id}>
-                              <div class="menu-title">{item.}</div>
+                              <div class="menu-title">{item.title}</div>
                               <ul>
-                                <li>
-                                  <a href="#">
-                                    <strong>New Arrivals</strong>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <strong>Best Sellers</strong>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <strong>Trending</strong>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">Clothing</a>
-                                </li>
-                                <li>
-                                  <a href="#">Shoes</a>
-                                </li>
-                                <li>
-                                  <a href="#">Bags</a>
-                                </li>
-                                <li>
-                                  <a href="#">Accessories</a>
-                                </li>
-                                <li>
-                                  <a href="#">Jewlery & Watches</a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <strong>Sale</strong>
-                                  </a>
-                                </li>
+                                {item.li.map((item, index) => (
+                                  <li key={index}>
+                                    <NavLink to="/shop/grid-3-columns">
+                                      {item.strong ? (
+                                        <strong>{item.name}</strong>
+                                      ) : (
+                                        item.name
+                                      )}
+                                    </NavLink>
+                                  </li>
+                                ))}
                               </ul>
                             </div>
                           ))}
                         </div>
                       </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="banner banner-overlay">
+                        <NavLink
+                          to="/shop/grid-3-columns"
+                          class="banner banner-menu"
+                        >
+                          <img src={categoriesClothing.banner} alt="Banner" />
+                        </NavLink>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-col menu-brands">
+                    <div class="row">
+                      {categoriesClothing.brands.map((item, index) => (
+                        <div key={index} class="col-lg-2">
+                          <NavLink to="/shop/grid-3-columns" class="brand">
+                            <img src={item} alt="Brand Name" />
+                          </NavLink>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>

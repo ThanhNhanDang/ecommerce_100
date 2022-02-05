@@ -13,6 +13,11 @@ function ProductOwlCarousel(props) {
         {props.product.sale && (
           <span className="product-label label-circle label-sale">Sale</span>
         )}
+        {props.product.outOfStock && (
+          <span className="product-label label-out">
+            Out Of Stock
+          </span>
+        )}
         <a href="product.html">
           <img
             src={props.product.img}

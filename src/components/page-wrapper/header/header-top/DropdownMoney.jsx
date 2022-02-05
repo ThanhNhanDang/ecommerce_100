@@ -1,16 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DropdownMoney() {
   return (
     <div className="header-dropdown">
-      <a href="/">USD</a>
+      <Link to="/">USD</Link>
       <div className="header-menu">
         <ul>
           <li>
-            <a href="/">Eur</a>
+            <Link to="/">Eur</Link>
           </li>
           <li>
-            <a href="/">Usd</a>
+            <Link to="/">Usd</Link>
           </li>
         </ul>
       </div>

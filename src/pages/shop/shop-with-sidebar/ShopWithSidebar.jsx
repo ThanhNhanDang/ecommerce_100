@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { products } from "../../../data";
 import Breadcrumb from "./Breadcrumb";
 import ShopWith1Columns from "./ShopWith1Columns";
 import ShopWith2Columns from "./ShopWith2Columns";
@@ -18,8 +19,6 @@ const toolboxLeft = {
   limit: 9,
   length: 54,
 };
-
-const products = [{}];
 
 function ShopWithSidebar() {
   return (
