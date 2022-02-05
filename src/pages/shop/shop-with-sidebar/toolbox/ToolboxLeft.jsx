@@ -2,8 +2,8 @@ import React from "react";
 
 function ToolboxLeft(props) {
   return (
-    <div class="toolbox-left">
-      <div class="toolbox-info">
+    <div className="toolbox-left">
+      <div className="toolbox-info">
         Showing{" "}
         <span>
           {props.toolboxLeft.limit} of {props.toolboxLeft.length}

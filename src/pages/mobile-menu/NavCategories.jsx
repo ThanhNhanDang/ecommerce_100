@@ -2,15 +2,37 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { id: 1, name: "Beds" },
-  { id: 2, name: "Lighting" },
-  { id: 3, name: "Sofas & Sleeper sofas" },
-  { id: 4, name: "BStorageeds" },
-  { id: 5, name: "Armchairs & Chaises" },
-  { id: 6, name: "Decoration" },
-  { id: 7, name: "Kitchen Cabinets" },
-  { id: 8, name: "Coffee & Tables" },
-  { id: 9, name: "Outdoor Furniture" },
+  "Beds",
+  "Lighting",
+  "Sofas & Sleeper sofas",
+  "BStorageeds",
+  "Armchairs & Chaises",
+  "Decoration",
+  "Kitchen Cabinets",
+  "Coffee & Tables",
+  "Outdoor Furniture",
+  "Desktop Computers",
+  "Monitors",
+  "Laptops",
+  "iPad & Tablets",
+  "Hard Drives & Storage",
+  "Printers & Supplies",
+  "Computer Accessories",
+  "TVs",
+  "Home Audio Speakers",
+  "Projectors",
+  "Media Streaming Devices",
+  "Carrier Phones",
+  "Unlocked Phones",
+  "Phone & Cellphone Cases",
+  "Cellphone Chargers",
+  "Digital SLR Cameras",
+  "Sports & Action Cameras",
+  "Camcorders",
+  "Camera Lenses",
+  "Photo Printer",
+  "Digital Memory Cards",
+  "Camera Bags, Backpacks & Cases",
 ];
 
 function NavCategories() {
@@ -24,20 +46,13 @@ function NavCategories() {
       <nav className="mobile-cats-nav">
         <ul className="mobile-cats-menu">
           <li>
-            <a className="mobile-cats-lead" href="/#">
-              Daily offers
-            </a>
-          </li>
-          <li>
-            <a className="mobile-cats-lead" href="/#">
+            <Link to={"/shop/grid-3-columns/"} className="mobile-cats-lead">
               Gift Ideas
-            </a>
+            </Link>
           </li>
-          {categories.map((item) => (
-            <li key={item.id}>
-              <Link active="active" to={"/shop/grid-3-columns/" + item.id}>
-                {item.name}
-              </Link>
+          {categories.map((item, index) => (
+            <li key={index}>
+              <Link to={"/shop/grid-3-columns/"}>{item}</Link>
             </li>
           ))}
         </ul>

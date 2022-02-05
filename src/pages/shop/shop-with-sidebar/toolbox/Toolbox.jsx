@@ -4,7 +4,7 @@ import ToolboxRight from "./ToolboxRight";
 
 function Toolbox(props) {
   return (
-    <div class="toolbox">
+    <div className="toolbox">
       <ToolboxLeft toolboxLeft={props.toolboxLeft} />
       <ToolboxRight />
     </div>
