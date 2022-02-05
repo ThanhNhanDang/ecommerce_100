@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const shops = [
   {
@@ -113,9 +113,9 @@ const shops = [
 function Shopmenu() {
   return (
     <li>
-      <Link to="/shop/grid-3-columns" class="sf-with-ul">
+      <NavLink to="/shop/grid-3-columns" class="sf-with-ul">
         Shop
-      </Link>
+      </NavLink>
       <div class="megamenu megamenu-md">
         <div class="row no-gutters">
           <div class="col-md-8">
@@ -129,7 +129,7 @@ function Shopmenu() {
                         <ul>
                           {item.items.map((i, index) => (
                             <li key={index}>
-                              <Link to={i.link}>
+                              <NavLink to={i.link}>
                                 {i.new === i.hot ? (
                                   i.name
                                 ) : i.new ? (
@@ -143,7 +143,7 @@ function Shopmenu() {
                                     <span class="tip tip-hot">Hot</span>
                                   </span>
                                 ) : null}
-                              </Link>
+                              </NavLink>
                             </li>
                           ))}
                         </ul>

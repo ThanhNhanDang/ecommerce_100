@@ -1,5 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import {
+  categoriesClothing,
+  categoriesCooking,
+  categoriesDropdown,
+} from "../../../../../data";
 
 const categories = [
   { id: 1, name: "Beds" },
@@ -9,8 +14,6 @@ const categories = [
   { id: 5, name: "Armchairs & Chaises" },
   { id: 6, name: "Decoration" },
   { id: 7, name: "Kitchen Cabinets" },
-  { id: 8, name: "Coffee & Tables" },
-  { id: 9, name: "Outdoor Furniture" },
 ];
 
 function HeaderBottomLeft() {
@@ -32,15 +35,146 @@ function HeaderBottomLeft() {
         <div className="dropdown-menu">
           <nav className="side-nav">
             <ul className="menu-vertical sf-arrows">
-              <li className="item-lead">
-                <a href="/#">Daily offers</a>
+              {categoriesDropdown.map((item) => (
+                <li key={item.id} className="megamenu-container">
+                  <Link
+                    to={"/shop/grid-3-columns/" + item.id}
+                    className={item.row && "sf-with-ul"}
+                  >
+                    {item.name}
+                  </Link>
+                  <div class="megamenu">
+                    <div class="row no-gutters">
+                      <div class="col-md-8">
+                        <div class="menu-col">
+                          <div class="row">
+                            {item.row.map((item) => (
+                              <div class="col-md-6" key={item.id}>
+                                {item.title.map((item) => (
+                                  <React.Fragment key={item.id}>
+                                    <div class="menu-title">{item.tle}</div>
+                                    <ul>
+                                      {item.li.map((item) => (
+                                        <li key={item}>
+                                          <NavLink
+                                            to={`/shop/grid-3-columns/${item}`}
+                                          >
+                                            {item}
+                                          </NavLink>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </React.Fragment>
+                                ))}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">{item.baner}</div>
+                    </div>
+                  </div>
+                </li>
+              ))}
+              <li class="megamenu-container">
+                <NavLink to="/shop/grid-3-columns" class="sf-with-ul">
+                  {categoriesCooking.name}
+                </NavLink>
+                <div class="megamenu">
+                  <div class="menu-col">
+                    <div class="row">
+                      {categoriesCooking.row.map((item) => (
+                        <div class="col-md-4" key={item.id}>
+                          <div class="menu-title">{item.title}</div>
+                          <ul>
+                            {item.li.map((item, index) => (
+                              <li key={index}>
+                                <NavLink to="/shop/grid-3-columns">
+                                  {item}
+                                </NavLink>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                    <div class="row menu-banners">
+                      {categoriesCooking.banner.map((item, index) => (
+                        <div class="col-md-4" key={index}>
+                          <div class="banner">
+                            <NavLink to="/shop/grid-3-columns">
+                              <img src={item} alt="image" />
+                            </NavLink>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="megamenu-container">
+                <NavLink to="/shop/grid-3-columns" class="sf-with-ul">
+                  {categoriesClothing.name}
+                </NavLink>
+                <div class="megamenu">
+                  <div class="row no-gutters">
+                    <div class="col-md-8">
+                      <div class="menu-col">
+                        <div class="row">
+                          {categoriesClothing.row.map((item) => (
+                            <div class="col-md-6" key={item.id}>
+                              <div class="menu-title">{item.}</div>
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <strong>New Arrivals</strong>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <strong>Best Sellers</strong>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <strong>Trending</strong>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">Clothing</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shoes</a>
+                                </li>
+                                <li>
+                                  <a href="#">Bags</a>
+                                </li>
+                                <li>
+                                  <a href="#">Accessories</a>
+                                </li>
+                                <li>
+                                  <a href="#">Jewlery & Watches</a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <strong>Sale</strong>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li className="item-lead">
                 <a href="/#">Gift Ideas</a>
               </li>
               {categories.map((item) => (
                 <li key={item.id}>
-                  <Link active="active" to={"/shop/grid-3-columns/" + item.id}>
+                  <Link to={"/shop/grid-3-columns/" + item.id}>
                     {item.name}
                   </Link>
                 </li>

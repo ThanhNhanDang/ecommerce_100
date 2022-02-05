@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const products = [
   {
     img:
@@ -258,4 +260,243 @@ export const optionsBrand = {
       items: 6,
     },
   },
+};
+
+export const categoriesDropdown = [
+  {
+    id: 1,
+    name: "Electronics",
+    row: [
+      {
+        id: 1,
+        title: [
+          {
+            id: 1,
+            tle: "Laptops & Computers",
+            li: [
+              "Desktop Computers",
+              "Monitors",
+              "Laptops",
+              "iPad & Tablets",
+              "Hard Drives & Storage",
+              "Printers & Supplies",
+              "Computer Accessories",
+            ],
+          },
+          {
+            id: 2,
+            tle: "TV & Video",
+            li: [
+              "TVs",
+              "Home Audio Speakers",
+              "Projectors",
+              "Media Streaming Devices",
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: [
+          {
+            id: 1,
+            tle: "Cell Phones",
+            li: [
+              "Carrier Phones",
+              "Unlocked Phones",
+              "Phone & Cellphone Cases",
+              "Cellphone Chargers",
+            ],
+          },
+          {
+            id: 2,
+            tle: "Digital Cameras",
+            li: [
+              "Digital SLR Cameras",
+              "Sports & Action Cameras",
+              "Camcorders",
+              "Camera Lenses",
+              "Photo Printer",
+              "Digital Memory Cards",
+              "Camera Bags, Backpacks & Cases",
+            ],
+          },
+        ],
+      },
+    ],
+    baner: (
+      <div class="banner banner-overlay">
+        <NavLink to="/shop/grid-3-columns" class="banner banner-menu">
+          <img
+            src="/assets/images/demos/demo-13/menu/banner-1.jpg"
+            alt="Banner"
+          />
+        </NavLink>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    name: "Furniture",
+    row: [
+      {
+        id: 1,
+        title: [
+          {
+            id: 1,
+            tle: "Bedroom",
+            li: [
+              "Beds, Frames & Bases",
+              "Dressers",
+              "Nightstands",
+              "Kids' Beds & Headboards",
+              "Armoires",
+              "Printers & Supplies",
+              "Computer Accessories",
+            ],
+          },
+          {
+            id: 2,
+            tle: "Living Room",
+            li: [
+              "Coffee Tables",
+              "Chairs",
+              "Tables",
+              "Futons & Sofa Beds",
+              "Cabinets & Chests",
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: [
+          {
+            id: 1,
+            tle: "Office",
+            li: [
+              "Office Chairs",
+              "Desks",
+              "Bookcases",
+              "File Cabinets",
+              "Breakroom Tables",
+            ],
+          },
+          {
+            id: 2,
+            tle: "Kitchen & Dining",
+            li: [
+              "Dining Sets",
+              "Kitchen Storage Cabinets",
+              "Bakers Racks",
+              "Dining Chairs",
+              "Dining Room Tables",
+              "Bar Stools",
+            ],
+          },
+        ],
+      },
+    ],
+    baner: (
+      <div class="banner banner-overlay">
+        <NavLink to="/shop/grid-3-columns" class="banner banner-menu">
+          <img
+            src="/assets/images/demos/demo-13/menu/banner-2.jpg"
+            alt="Banner"
+          />
+        </NavLink>
+      </div>
+    ),
+  },
+];
+
+export const categoriesCooking = {
+  name: "Cooking",
+  row: [
+    {
+      id: 1,
+      title: "Cookware",
+      li: [
+        "Cookware Sets",
+        "Pans, Griddles & Woks",
+        "Pots",
+        "Skillets & Grill Pans",
+        "Kettles",
+        "Soup & Stockpots",
+      ],
+    },
+    {
+      id: 2,
+      title: "Dinnerware & Tabletop",
+      li: [
+        "Plates",
+        "Cups & Mugs",
+        "Trays & Platters",
+        "Coffee & Tea Serving",
+        "Salt & Pepper Shaker",
+      ],
+    },
+    {
+      id: 3,
+      title: "Cooking Appliances",
+      li: [
+        "Microwaves",
+        "Coffee Makers",
+        "Mixers & Attachments",
+        "Slow Cookers",
+        "Air Fryers",
+        "Toasters & Ovens",
+      ],
+    },
+  ],
+  banner: [
+    "/assets/images/demos/demo-13/menu/1.jpg",
+    "/assets/images/demos/demo-13/menu/2.jpg",
+    "/assets/images/demos/demo-13/menu/3.jpg",
+  ],
+};
+
+export const categoriesClothing = {
+  name: "Clothing",
+  row: [
+    {
+      id: 1,
+      title: "Women",
+      li: [
+        { strong: true, name: "New Arrivals" },
+        { strong: true, name: "Best Sellers" },
+        { strong: true, name: "Trending" },
+        { strong: false, name: "Clothing" },
+        { strong: false, name: "Shoes" },
+        { strong: false, name: "Bags" },
+        { strong: false, name: "Accessories" },
+        { strong: false, name: "Jewlery & Watches" },
+        { strong: true, name: "Sale" },
+      ],
+    },
+    {
+      id: 2,
+      title: "Men",
+      li: [
+        { strong: true, name: "New Arrivals" },
+        { strong: true, name: "Best Sellers" },
+        { strong: true, name: "Trending" },
+        { strong: false, name: "Clothing" },
+        { strong: false, name: "Shoes" },
+        { strong: false, name: "Bags" },
+        { strong: false, name: "Accessories" },
+        { strong: false, name: "Jewlery & Watches" },
+        { strong: true, name: "Sale" },
+      ],
+    },
+  ],
+  banner: "/assets/images/demos/demo-13/menu/banner-3.jpg",
+  brands: [
+    "/assets/images/brands/1.png",
+    "/assets/images/brands/2.png",
+    "/assets/images/brands/3.png",
+    "/assets/images/brands/4.png",
+    "/assets/images/brands/5.png",
+    "/assets/images/brands/6.png",
+  ],
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
             <div className="col-sm-6 col-lg-3">
               <div className="widget widget-about">
                 <img
-                  src="assets/images/demos/demo-3/logo-footer.png"
+                  src="/assets/images/demos/demo-3/logo-footer.png"
                   className="footer-logo"
                   alt="Footer Logo"
                   width="105"
@@ -38,7 +39,7 @@ function Footer() {
 
                 <ul className="widget-list">
                   <li>
-                    <a href="about.html">About Molla</a>
+                    <Link to="/about-us">About Molla</Link>
                   </li>
                   <li>
                     <a href="/#">Our Services</a>
@@ -50,7 +51,7 @@ function Footer() {
                     <a href="faq.html">FAQ</a>
                   </li>
                   <li>
-                    <a href="contact.html">Contact us</a>
+                    <Link to="/contact-us">Contact us</Link>
                   </li>
                 </ul>
                 {/* End .widget-list */}
@@ -132,7 +133,7 @@ function Footer() {
           {/* End .footer-copyright */}
           <figure className="footer-payments">
             <img
-              src="assets/images/payments.png"
+              src="/assets/images/payments.png"
               alt="Payment methods"
               width="272"
               height="20"
