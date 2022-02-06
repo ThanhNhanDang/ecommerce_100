@@ -35,8 +35,8 @@ function ColourSidebar() {
   };
 
   return (
-    <div class="widget widget-collapsible">
-      <h3 class="widget-title">
+    <div className="widget widget-collapsible">
+      <h3 className="widget-title">
         <a
           data-toggle="collapse"
           href="#widget-3"
@@ -49,9 +49,9 @@ function ColourSidebar() {
       </h3>
       {/* End .widget-title */}
 
-      <div class="collapse show" id="widget-3">
-        <div class="widget-body">
-          <div class="filter-colors">
+      <div className="collapse show" id="widget-3">
+        <div className="widget-body">
+          <div className="filter-colors">
             {colours.map((item, index) => (
               <a
                 key={index}
@@ -59,7 +59,7 @@ function ColourSidebar() {
                 onClick={() => handleClick(index)}
                 style={{ background: item.color }}
               >
-                <span class="sr-only">Color Name</span>
+                <span className="sr-only">Color Name</span>
               </a>
             ))}
           </div>

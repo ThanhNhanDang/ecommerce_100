@@ -2,8 +2,8 @@ import React from "react";
 
 function SizeSidebar() {
   return (
-    <div class="widget widget-collapsible">
-      <h3 class="widget-title">
+    <div className="widget widget-collapsible">
+      <h3 className="widget-title">
         <a
           data-toggle="collapse"
           href="#widget-2"
@@ -16,17 +16,17 @@ function SizeSidebar() {
       </h3>
       {/* End .widget-title */}
 
-      <div class="collapse show" id="widget-2">
-        <div class="widget-body">
-          <div class="filter-items">
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+      <div className="collapse show" id="widget-2">
+        <div className="widget-body">
+          <div className="filter-items">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="size-1"
                 />
-                <label class="custom-control-label" for="size-1">
+                <label className="custom-control-label" for="size-1">
                   XS
                 </label>
               </div>
@@ -34,14 +34,14 @@ function SizeSidebar() {
             </div>
             {/* End .filter-item */}
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="size-2"
                 />
-                <label class="custom-control-label" for="size-2">
+                <label className="custom-control-label" for="size-2">
                   S
                 </label>
               </div>
@@ -49,15 +49,15 @@ function SizeSidebar() {
             </div>
             {/* End .filter-item */}
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   checked
                   id="size-3"
                 />
-                <label class="custom-control-label" for="size-3">
+                <label className="custom-control-label" for="size-3">
                   M
                 </label>
               </div>
@@ -65,15 +65,15 @@ function SizeSidebar() {
             </div>
             {/* End .filter-item */}
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   checked
                   id="size-4"
                 />
-                <label class="custom-control-label" for="size-4">
+                <label className="custom-control-label" for="size-4">
                   L
                 </label>
               </div>
@@ -81,14 +81,14 @@ function SizeSidebar() {
             </div>
             {/* End .filter-item */}
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="size-5"
                 />
-                <label class="custom-control-label" for="size-5">
+                <label className="custom-control-label" for="size-5">
                   XL
                 </label>
               </div>
@@ -96,14 +96,14 @@ function SizeSidebar() {
             </div>
             {/* End .filter-item */}
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="size-6"
                 />
-                <label class="custom-control-label" for="size-6">
+                <label className="custom-control-label" for="size-6">
                   XXL
                 </label>
               </div>

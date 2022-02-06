@@ -2,8 +2,8 @@ import React from "react";
 
 function CategoriesSidebar() {
   return (
-    <div class="widget widget-collapsible">
-      <h3 class="widget-title">
+    <div className="widget widget-collapsible">
+      <h3 className="widget-title">
         <a
           data-toggle="collapse"
           href="#widget-1"
@@ -14,123 +14,123 @@ function CategoriesSidebar() {
           Category
         </a>
       </h3>
-      <div class="collapse show" id="widget-1">
-        <div class="widget-body">
-          <div class="filter-items filter-items-count">
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+      <div className="collapse show" id="widget-1">
+        <div className="widget-body">
+          <div className="filter-items filter-items-count">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="cat-1"
                 />
-                <label class="custom-control-label" for="cat-1">
+                <label className="custom-control-label" for="cat-1">
                   Dresses
                 </label>
               </div>
               {/* End .custom-checkbox */}
-              <span class="item-count">3</span>
+              <span className="item-count">3</span>
             </div>
             {/* End .filter-item */}
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="cat-2"
                 />
-                <label class="custom-control-label" for="cat-2">
+                <label className="custom-control-label" for="cat-2">
                   T-shirts
                 </label>
               </div>
               {/* End .custom-checkbox */}
-              <span class="item-count">0</span>
+              <span className="item-count">0</span>
             </div>
             {/* End .filter-item */}
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="cat-3"
                 />
-                <label class="custom-control-label" for="cat-3">
+                <label className="custom-control-label" for="cat-3">
                   Bags
                 </label>
               </div>
-              <span class="item-count">4</span>
+              <span className="item-count">4</span>
             </div>
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="cat-4"
                 />
-                <label class="custom-control-label" for="cat-4">
+                <label className="custom-control-label" for="cat-4">
                   Jackets
                 </label>
               </div>
-              <span class="item-count">2</span>
+              <span className="item-count">2</span>
             </div>
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="cat-5"
                 />
-                <label class="custom-control-label" for="cat-5">
+                <label className="custom-control-label" for="cat-5">
                   Shoes
                 </label>
               </div>
-              <span class="item-count">2</span>
+              <span className="item-count">2</span>
             </div>
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="cat-6"
                 />
-                <label class="custom-control-label" for="cat-6">
+                <label className="custom-control-label" for="cat-6">
                   Jumpers
                 </label>
               </div>
-              <span class="item-count">1</span>
+              <span className="item-count">1</span>
             </div>
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="cat-7"
                 />
-                <label class="custom-control-label" for="cat-7">
+                <label className="custom-control-label" for="cat-7">
                   Jeans
                 </label>
               </div>
-              <span class="item-count">1</span>
+              <span className="item-count">1</span>
             </div>
 
-            <div class="filter-item">
-              <div class="custom-control custom-checkbox">
+            <div className="filter-item">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="cat-8"
                 />
-                <label class="custom-control-label" for="cat-8">
+                <label className="custom-control-label" for="cat-8">
                   Sportwear
                 </label>
               </div>
-              <span class="item-count">0</span>
+              <span className="item-count">0</span>
             </div>
           </div>
         </div>

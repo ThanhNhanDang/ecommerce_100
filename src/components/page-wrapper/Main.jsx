@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "../../pages/About";
-import Cart from "../../pages/Cart";
+import Cart from "../../pages/cart/Cart";
 import Checkout from "../../pages/Checkout";
 import Contact from "../../pages/Contact";
 import Home from "../../pages/home/Home";
 import MyAccount from "../../pages/MyAccount";
 import ProductDetails from "../../pages/ProductDetails";
 import Shop from "../../pages/shop/Shop";
-import Wishlist from "../../pages/Wishlist";
+import Wishlist from "../../pages/wishlist/Wishlist";
 
 function Main() {
   return (
@@ -23,7 +23,7 @@ function Main() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
-      <Shop />
+      <Shop/>
     </main>
   );
 }

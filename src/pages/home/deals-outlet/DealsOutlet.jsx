@@ -3,28 +3,71 @@ import ProductOwlCarousel from "../tablist/ProductOwlCarousel";
 
 const products = [
   {
-    top: true,
+    id: 7,
+    img: "https://i.ibb.co/NKXgF5t/600-xiaomi-mi-10-pro.png",
+    imgHover: "https://i.ibb.co/fN3BMSJ/dien-thoai-chup-anh-dep-11.png",
+    thumbnails: [
+      {
+        active: true,
+        img: "https://i.ibb.co/NKXgF5t/600-xiaomi-mi-10-pro.png",
+      },
+      {
+        active: false,
+        img:
+          "https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2020/10/27/1_637394086980896366.png",
+      },
+      {
+        active: false,
+        img:
+          "https://cdn.tgdd.vn/Products/Images/42/229228/xiaomi-redmi-note-10-pro-thumb-xam-600x600-600x600.jpg",
+      },
+    ],
+    top: false,
     sale: true,
-    img: "assets/images/demos/demo-3/products/product-5.jpg",
-    imgHover: "assets/images/demos/demo-3/products/product-2.jpg",
-    cat: "Digital Cameras",
-    title: "Canon - EOS 5D Mark IV DSLR Camera",
-    price: 3599.99,
-    oldPrice: 3999.99,
-    ratings: 80,
-    reviews: 5,
+    new: true,
+    description:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Phasellus hendrerit. Pellentesque",
+    color: false,
+    colors: [],
+    outOfStock: false,
+    cat: "Cameras & Camcorders",
+    title: "GoPro - HERO7 Black HD Waterproof Action",
+    price: 349.99,
+    ratingsVal: 60,
+    reviews: 2,
   },
   {
+    id: 8,
+    img: "https://i.ibb.co/T4JNYfj/14ab60b9a783ace9e7a7c97b8e142ef4.png",
+    imgHover: "https://i.ibb.co/fN3BMSJ/dien-thoai-chup-anh-dep-11.png",
+    thumbnails: [
+      {
+        active: true,
+        img: "https://i.ibb.co/T4JNYfj/14ab60b9a783ace9e7a7c97b8e142ef4.png",
+      },
+      {
+        active: false,
+        img:
+          "https://res.cloudinary.com/cenergy-innovation-limited-head-office/image/fetch/c_scale,q_70,f_auto,h_740/https://d1dtruvuor2iuy.cloudfront.net/media/catalog/product/p/w/pwb000258050.jpg",
+      },
+      {
+        active: false,
+        img: "https://cf.shopee.vn/file/c13f4c35f54168709d41d780611216b1",
+      },
+    ],
     top: true,
     sale: false,
-    img: "assets/images/demos/demo-3/products/product-6.jpg",
-    imgHover: "assets/images/demos/demo-3/products/product-2.jpg",
-    cat: "Digital Cameras",
-    title: "Canon - EOS 5D Mark IV DSLR Camera",
-    price: 3599.99,
-    oldPrice: 3999.99,
-    ratings: 100,
-    reviews: 1201,
+    new: true,
+    description:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Phasellus hendrerit. Pellentesque",
+    color: false,
+    colors: [],
+    outOfStock: false,
+    cat: "Cameras & Camcorders",
+    title: "GoPro - HERO7 Black HD Waterproof Action",
+    price: 349.99,
+    ratingsVal: 60,
+    reviews: 212,
   },
 ];
 

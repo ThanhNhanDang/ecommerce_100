@@ -8,11 +8,11 @@ import SizeSidebar from "./SizeSidebar";
 
 function Sidebar() {
   return (
-    <aside class="col-lg-3 order-lg-first">
-      <div class="sidebar sidebar-shop">
-        <div class="widget widget-clean">
+    <aside className="col-lg-3 order-lg-first">
+      <div className="sidebar sidebar-shop">
+        <div className="widget widget-clean">
           <label>Filters:</label>
-          <Link to="#" class="sidebar-filter-clear">
+          <Link to="#" className="sidebar-filter-clear">
             Clean All
           </Link>
         </div>
