@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CartTotal() {
   return (
@@ -89,10 +90,10 @@ function CartTotal() {
       </div>
       {/* End .summary */}
 
-      <a href="category.html" class="btn btn-outline-dark-2 btn-block mb-3">
+      <Link to="/shop/grid-3-columns"  class="btn btn-outline-dark-2 btn-block mb-3">
         <span>CONTINUE SHOPPING</span>
         <i class="icon-refresh"></i>
-      </a>
+      </Link>
     </aside>
   );
 }

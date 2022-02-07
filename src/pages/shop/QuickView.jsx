@@ -29,7 +29,7 @@ function QuickView(props) {
 
   return (
     <>
-      <Dialog open={openImg} fullWidth="lg">
+      <Dialog open={openImg} fullWidth="false">
         <DialogTitle sx={{ m: 0, p: 2 }} onClose={handleCloseImg}>
           {handleCloseImg ? (
             <IconButton
@@ -50,7 +50,7 @@ function QuickView(props) {
           <img src={fullImg} alt="" />
         </DialogContent>
       </Dialog>
-      <Dialog fullWidth="md" maxWidth="md" open={open}>
+      <Dialog fullWidth="false" maxWidth="md" open={open}>
         <DialogTitle sx={{ m: 0, p: 2 }} onClose={onClose}>
           {onClose ? (
             <IconButton
@@ -109,7 +109,10 @@ function QuickView(props) {
 
                   <div className="ratings-container">
                     <div className="ratings">
-                      <div className="ratings-val" style={{ width: `20%` }}></div>
+                      <div
+                        className="ratings-val"
+                        style={{ width: `20%` }}
+                      ></div>
                       {/* End .ratings-val */}
                     </div>
                     {/* End .ratings */}

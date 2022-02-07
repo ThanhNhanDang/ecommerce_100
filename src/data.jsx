@@ -37,6 +37,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 50,
     reviews: 11324,
+    quantity:1,
   },
   {
     id: 2,
@@ -73,6 +74,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 10,
     reviews: 2,
+    quantity:1,
   },
   {
     id: 3,
@@ -111,6 +113,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 90,
     reviews: 2,
+    quantity:1,
   },
   {
     id: 4,
@@ -145,6 +148,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 100,
     reviews: 2,
+    quantity:1,
   },
   {
     id: 5,
@@ -185,6 +189,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 20,
     reviews: 2,
+    quantity:1,
   },
   {
     id: 6,
@@ -219,6 +224,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 60,
     reviews: 2,
+    quantity:1,
   },
   {
     id: 7,
@@ -253,6 +259,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 60,
     reviews: 2,
+    quantity:1,
   },
   {
     id: 8,
@@ -286,6 +293,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 60,
     reviews: 212,
+    quantity:1,
   },
   {
     id: 9,
@@ -320,6 +328,7 @@ export const productsHome = [
     price: 349.99,
     ratingsVal: 60,
     reviews: 21255,
+    quantity:1,
   },
 ];
 

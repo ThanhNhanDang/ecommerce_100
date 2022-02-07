@@ -20,12 +20,54 @@ function Footer() {
                   Praesent dapibus, neque id cursus ucibus, tortor neque egestas
                   augue, eu vulputate magna eros eu erat.
                 </p>
-
+                <div class="social-icons">
+                  <a
+                    href="#"
+                    class="social-icon"
+                    target="_blank"
+                    title="Facebook"
+                  >
+                    <i class="icon-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-icon"
+                    target="_blank"
+                    title="Twitter"
+                  >
+                    <i class="icon-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-icon"
+                    target="_blank"
+                    title="Instagram"
+                  >
+                    <i class="icon-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-icon"
+                    target="_blank"
+                    title="Youtube"
+                  >
+                    <i class="icon-youtube"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-icon"
+                    target="_blank"
+                    title="Pinterest"
+                  >
+                    <i class="icon-pinterest"></i>
+                  </a>
+                </div>
                 <div className="widget-call">
                   <i className="icon-phone"></i>
                   Got Question? Call us 24/7
                   <a href="tel:#">+0123 456 789</a>
                 </div>
+
                 {/* End .widget-call */}
               </div>
               {/* End .widget about-widget */}
@@ -98,13 +140,13 @@ function Footer() {
 
                 <ul className="widget-list">
                   <li>
-                    <a href="/#">Sign In</a>
+                    <a href="#signin-modal" data-toggle="modal">Sign In</a>
                   </li>
                   <li>
-                    <a href="cart.html">View Cart</a>
+                    <Link to="/my-cart">View Cart</Link>
                   </li>
                   <li>
-                    <a href="/#">My Wishlist</a>
+                    <Link to="/wishlist">My Wishlist</Link>
                   </li>
                   <li>
                     <a href="/#">Track My Order</a>

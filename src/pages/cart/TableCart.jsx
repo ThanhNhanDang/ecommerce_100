@@ -12,6 +12,10 @@ function TableCart() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleQuantity = (item) => {
+    console.log(item.quantity);
+  };
   return (
     <>
       {product ? (
@@ -54,6 +58,7 @@ function TableCart() {
                   <input
                     type="number"
                     class="form-control"
+                    value="1"
                     min="1"
                     max="10"
                     step="1"
@@ -61,9 +66,8 @@ function TableCart() {
                     required
                   />
                 </div>
-                {/* End .cart-product-quantity */}
               </td>
-              <td class="total-col">$84.00</td>
+              <td class="total-col">${item.price * item.quantity}</td>
               <td class="remove-col">
                 <button class="btn-remove">
                   <i class="icon-close"></i>

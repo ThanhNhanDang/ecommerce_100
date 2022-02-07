@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumb from "../shop/shop-with-sidebar/Breadcrumb";
 import TableWishlist from "./TableWishlist";
+import WishlistShare from "./WishlistShare";
 const breadcrumb = {
   item1: "Shop",
   active1: "unactive",
@@ -11,9 +12,10 @@ function Wishlist() {
   return (
     <>
       <Breadcrumb breadcrumb={breadcrumb} />
-      <div class="page-content">
-        <div class="container">
+      <div className="page-content">
+        <div className="container">
           <TableWishlist />
+          <WishlistShare />
         </div>
       </div>
     </>
