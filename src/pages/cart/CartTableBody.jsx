@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import QuickView from "../shop/QuickView";
 
 function TableBody(props) {
@@ -25,37 +26,39 @@ function TableBody(props) {
     <>
       <QuickView onClose={handleClose} open={open} product={product} />
       <tr key={product.id}>
-        <td class="product-col">
-          <div class="product">
-            <figure class="product-media">
+        <td className="product-col">
+          <div className="product">
+            <figure className="product-media">
               <a onClick={() => handleClickOpen(product)}>
                 <img src={product.img} alt="Product image" />
               </a>
             </figure>
 
-            <h3 class="product-title">
-              <a onClick={() => handleClickOpen(product)}>{product.title}</a>
+            <h3 className="product-title">
+              <Link to={`/product/${product.id}`}>{product.title}</Link>
             </h3>
             {/* End .product-title */}
           </div>
           {/* End .product */}
         </td>
-        <td class="price-col">${product.price}</td>
-        <td class="quantity-col">
-          <div class="cart-product-quantity">
+        <td className="price-col">${product.price}</td>
+        <td className="quantity-col">
+          <div className="cart-product-quantity">
             <input
               type="text"
               value={quantity}
-              class="form-control"
+              className="form-control"
               onChange={(e) => handleChange(e)}
               required
             />
           </div>
         </td>
-        <td class="total-col">${product.price * Number(quantity)}</td>
-        <td class="remove-col">
-          <button class="btn-remove">
-            <i class="icon-close"></i>
+        <td className="total-col">
+          ${(product.price * Number(quantity)).toFixed(2)}
+        </td>
+        <td className="remove-col">
+          <button className="btn-remove">
+            <i className="icon-close"></i>
           </button>
         </td>
       </tr>

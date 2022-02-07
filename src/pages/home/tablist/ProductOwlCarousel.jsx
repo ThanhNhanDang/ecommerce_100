@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import QuickView from "../../shop/QuickView";
 
 function ProductOwlCarousel(props) {
@@ -65,10 +66,12 @@ function ProductOwlCarousel(props) {
         </figure>
         <div className="product-body">
           <div className="product-cat">
-            <a href="/#">{props.product.cat}</a>
+            <Link to="/shop/grid-3-columns">{props.product.cat}</Link>
           </div>
           <h3 className="product-title">
-            <a href="product.html">{props.product.title}</a>
+            <Link to={`/product/${props.product.id}`}>
+              {props.product.title}
+            </Link>
           </h3>
           <div className="product-price">
             {props.product.outOfStock === props.product.oldPrice ? (

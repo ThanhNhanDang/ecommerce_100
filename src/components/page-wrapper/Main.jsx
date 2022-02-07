@@ -2,11 +2,11 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "../../pages/About";
 import Cart from "../../pages/cart/Cart";
-import Checkout from "../../pages/Checkout";
 import Contact from "../../pages/Contact";
 import Home from "../../pages/home/Home";
-import MyAccount from "../../pages/MyAccount";
-import ProductDetails from "../../pages/ProductDetails";
+import Checkout from "../../pages/checkout/Checkout";
+import MyAccount from "../../pages/my-account/MyAccount";
+import ProductDetails from "../../pages/product-details/Product";
 import Shop from "../../pages/shop/Shop";
 import Wishlist from "../../pages/wishlist/Wishlist";
 
@@ -23,7 +23,7 @@ function Main() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
-      <Shop/>
+      <Shop />
     </main>
   );
 }

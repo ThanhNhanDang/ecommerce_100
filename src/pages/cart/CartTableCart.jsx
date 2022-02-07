@@ -1,9 +1,9 @@
 import React from "react";
-import TableBody from "./TableBody";
+import TableBody from "./CartTableBody";
 
 function TableCart({ productsCart }) {
   return (
-    <table class="table table-cart table-mobile">
+    <table className="table table-cart table-mobile">
       <thead>
         <tr>
           <th>Product</th>

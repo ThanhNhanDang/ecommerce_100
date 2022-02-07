@@ -38,6 +38,7 @@ function ProductShop234Sidebar(props) {
           <a>
             <img
               src={imageProduct}
+              style={{ cursor: "pointer" }}
               alt="Product image"
               onClick={handleClickOpen}
               className="product-image"

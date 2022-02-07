@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { productsHome } from "../../data";
 import QuickView from "../shop/QuickView";
 
@@ -41,7 +42,7 @@ function TableWishlist() {
                   </figure>
 
                   <h3 className="product-title">
-                    <a onClick={() => handleClickOpen(item)}>{item.title}</a>
+                    <Link to={`/product/${item.id}`}>{item.title}</Link>
                   </h3>
                 </div>
               </td>
@@ -65,13 +66,13 @@ function TableWishlist() {
                   </button>
 
                   <div className="dropdown-menu">
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/#">
                       First option
                     </a>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/#">
                       Another option
                     </a>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/#">
                       The best option
                     </a>
                   </div>
