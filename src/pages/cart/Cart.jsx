@@ -3,7 +3,7 @@ import Breadcrumb from "../shop/shop-with-sidebar/Breadcrumb";
 import CartBottom from "./CartBottom";
 import CartTotal from "./CartTotal";
 import TableCart from "./TableCart";
-
+import { productsHome } from "../../data";
 const breadcrumb = {
   item1: "Shop",
   active1: "unactive",
@@ -12,6 +12,7 @@ const breadcrumb = {
 };
 
 function Cart() {
+  console.log(productsHome)
   return (
     <>
       <Breadcrumb breadcrumb={breadcrumb} />
@@ -20,8 +21,8 @@ function Cart() {
           <div class="container">
             <div class="row">
               <div class="col-lg-9">
-                <TableCart />
-                <CartBottom />
+                <TableCart productsCart={productsHome}/>
+                <CartBottom productsCart={productsHome}/>
               </div>
               <CartTotal/>
             </div>
