@@ -7,8 +7,7 @@ import {
   IconButton,
 } from "@mui/material";
 import React from "react";
-import CloseIcon from "@mui/icons-material/Close";
-
+import CloseIcon from '@mui/icons-material/Close';
 function QuickView(props) {
   const { onClose, open, product } = props;
   const [openImg, setOpenImg] = React.useState(false);
