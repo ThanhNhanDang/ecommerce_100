@@ -22,7 +22,7 @@ function Footer() {
                 </p>
                 <div class="social-icons">
                   <a
-                    href="#"
+                    href="/#"
                     class="social-icon"
                     target="_blank"
                     title="Facebook"
@@ -30,7 +30,7 @@ function Footer() {
                     <i class="icon-facebook-f"></i>
                   </a>
                   <a
-                    href="#"
+                    href="/#"
                     class="social-icon"
                     target="_blank"
                     title="Twitter"
@@ -38,7 +38,7 @@ function Footer() {
                     <i class="icon-twitter"></i>
                   </a>
                   <a
-                    href="#"
+                    href="/#"
                     class="social-icon"
                     target="_blank"
                     title="Instagram"
@@ -46,7 +46,7 @@ function Footer() {
                     <i class="icon-instagram"></i>
                   </a>
                   <a
-                    href="#"
+                    href="/#"
                     class="social-icon"
                     target="_blank"
                     title="Youtube"
@@ -54,7 +54,7 @@ function Footer() {
                     <i class="icon-youtube"></i>
                   </a>
                   <a
-                    href="#"
+                    href="/#"
                     class="social-icon"
                     target="_blank"
                     title="Pinterest"

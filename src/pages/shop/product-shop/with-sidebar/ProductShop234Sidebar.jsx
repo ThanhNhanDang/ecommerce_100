@@ -76,7 +76,7 @@ function ProductShop234Sidebar(props) {
 
         <div className="product-body">
           <div className="product-cat">
-            <a href="/#">{props.product.cat}</a>
+            <Link to="/shop/grid-3-columns">{props.product.cat}</Link>
           </div>
           <h3 className="product-title">
             <Link to={`/product/${props.product.id}`}>
